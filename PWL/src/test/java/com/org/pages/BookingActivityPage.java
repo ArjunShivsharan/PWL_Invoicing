@@ -55,7 +55,7 @@ public class BookingActivityPage {
 	@FindBy(id="CCMailAddress") WebElement ccMailAddress; 
 	@FindBy(id="SendMail") WebElement sendMail; 
 	@FindBy(id="CancelFullInvoice") WebElement cancelFullInvoice; 
-	@FindBy(id="SaveCreditote") WebElement saveCreditNote; //CancelFullInvoice
+	@FindBy(id="SaveCreditNote") WebElement saveCreditNote; //CancelFullInvoice
 	@FindBy(id="CloseSendMailModal") WebElement closeSendMailModal;
 
 	
@@ -129,7 +129,7 @@ public class BookingActivityPage {
 		//System.out.println("Message From SearchTextBoxCorrectData() : "+"Data Entered Correctly...!");
    }
 	
-	public String generateInvoice(String chargeName) throws Exception 
+	public void generateInvoice(String chargeName) throws Exception 
 	{
 //		WebDriverWait wait = new WebDriverWait(driver,3000);
 //		wait.until(ExpectedConditions.elementToBeClickable(okButton));
@@ -234,49 +234,48 @@ public class BookingActivityPage {
 //      Thread.sleep(10000);
 //      closeSendMailModal.click();
 	  
-return Inv_amount.getText();
-     }
+   }
 
 	
-	public void generateCreditNotes() throws Exception 
+	public void generateCreditNotes() throws Exception  
 	{
-		Thread.sleep(2000);
-		chargesDetailsTab.click();
-		//Thread.sleep(4000);
-		WebElement CN_amount = driver.findElement(By.id("InvoiceAmount"));
-		Thread.sleep(1000);
-		System.out.println("Credit Note generated Succesfully of Amount = "+CN_amount.getText());
 		
-		cancelFullInvoice.click();
-		Thread.sleep(3000);
-		saveCreditNote.click();
-//		Thread.sleep(3000);
-		okButton.click();
-		Thread.sleep(1000);
-		String currentWindowHandle= driver.getWindowHandle();
-		driver.switchTo().window(currentWindowHandle);
-		Thread.sleep(5000);
-		
-		
-		
-		Thread.sleep(2000);
-//		sendMailToCustomer.click();
-//		toMailAddress.clear();
-//		ccMailAddress.clear();
-//	    Thread.sleep(2000);
-//	    toMailAddress.sendKeys("mallikarjun.shivsharan@sharpitech.in");
-//	    Thread.sleep(2000);
-//	    JavascriptExecutor j = (JavascriptExecutor) driver;
-//	    j.executeScript("window.scrollBy(0,1200)");
-//	    Thread.sleep(2000);
-//	    sendMail.click();
-//	    Thread.sleep(5000);
-//		okButton.click();
-		
-		
-//	    
-	    
-	}
+			Thread.sleep(2000);
+			chargesDetailsTab.click();
+			//Thread.sleep(4000);
+			WebElement CN_amount = driver.findElement(By.id("InvoiceAmount"));
+			Thread.sleep(1000);
+			System.out.println("Credit Note generated Succesfully of Amount = "+CN_amount.getText());
+			
+			cancelFullInvoice.click();
+			Thread.sleep(3000);
+			saveCreditNote.click();
+     		Thread.sleep(3000);
+			okButton.click();
+			Thread.sleep(5000);
+			String currentWindowHandle= driver.getWindowHandle();
+			driver.switchTo().window(currentWindowHandle);
+			Thread.sleep(5000);
+			
+			
+			
+			
+//			sendMailToCustomer.click();
+//			toMailAddress.clear();
+//			ccMailAddress.clear();
+//		    Thread.sleep(2000);
+//		    toMailAddress.sendKeys("mallikarjun.shivsharan@sharpitech.in");
+//		    Thread.sleep(2000);
+//		    JavascriptExecutor j = (JavascriptExecutor) driver;
+//		    j.executeScript("window.scrollBy(0,1200)");
+//		    Thread.sleep(2000);
+//		    sendMail.click();
+//		    Thread.sleep(5000);
+//			okButton.click();
+			
+			
+//		   
+}
 	
 }
 
