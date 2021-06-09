@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+              <span class="suite-name border-failed">Default suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Mallikarjun.Shivshar\AppData\Local\Temp\testng-eclipse--962580158\testng-customsuite.xml</span>
+                    <span>C:\Users\Mallikarjun.Shivshar\AppData\Local\Temp\testng-eclipse-1116076346\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods,   5 passed</span>
+                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.org.testcases.BookingActivityPageTest" class="method navigator-link" hash-for-method="generateCreditNotesTest">generateCreditNotesTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,7 @@
                     <div class="method-list-content passed suite-Default_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.org.testcases.BookingActivityPageTest" class="method navigator-link" hash-for-method="generateCreditNotesTest">generateCreditNotesTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="com.org.testcases.BookingActivityPageTest" class="method navigator-link" hash-for-method="SearchTextBoxBlankDataTest">SearchTextBoxBlankDataTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -113,6 +127,21 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="com.org.testcases.BookingActivityPageTest" class="method navigator-link" hash-for-method="invoiceSearchTextBoxCorrectDataTest">invoiceSearchTextBoxCorrectDataTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.org.testcases.BookingActivityPageTest" class="method navigator-link" hash-for-method="invoiceSearchTextBoxIntegerDataTest">invoiceSearchTextBoxIntegerDataTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.org.testcases.BookingActivityPageTest" class="method navigator-link" hash-for-method="invoiceSearchTextBoxSpecialCharacterTest">invoiceSearchTextBoxSpecialCharacterTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.org.testcases.BookingActivityPageTest" class="method navigator-link" hash-for-method="invoiceSearchTextBoxStringDataTest">invoiceSearchTextBoxStringDataTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -137,9 +166,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+          <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.org.testcases.BookingActivityPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -148,6 +177,78 @@
                   <a name="generateCreditNotesTest">
                   </a> <!-- generateCreditNotesTest -->
                   <span class="method-name">generateCreditNotesTest</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=91.0.4472.77)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;STECH-MALLIK&apos;, ip: &apos;192.168.0.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.77, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: C:\Users\MALLIK~1.SHI\AppDa...}, goog:chromeOptions: {debuggerAddress: localhost:51851}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 89fd1827f57eb80837197ad56736957d
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+	at jdk.internal.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at com.sun.proxy.$Proxy14.click(Unknown Source)
+	at com.org.pages.BookingActivityPage.generateCreditNotes(BookingActivityPage.java:250)
+	at com.org.testcases.BookingActivityPageTest.generateCreditNotesTest(BookingActivityPageTest.java:76)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:766)
+	at org.testng.TestRunner.run(TestRunner.java:587)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+	at org.testng.TestNG.runSuites(TestNG.java:1039)
+	at org.testng.TestNG.run(TestNG.java:1007)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.org.testcases.BookingActivityPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="SearchTextBoxBlankDataTest">
+                  </a> <!-- SearchTextBoxBlankDataTest -->
+                  <span class="method-name">SearchTextBoxBlankDataTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -162,6 +263,27 @@
                   <a name="invoiceSearchTextBoxCorrectDataTest">
                   </a> <!-- invoiceSearchTextBoxCorrectDataTest -->
                   <span class="method-name">invoiceSearchTextBoxCorrectDataTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invoiceSearchTextBoxIntegerDataTest">
+                  </a> <!-- invoiceSearchTextBoxIntegerDataTest -->
+                  <span class="method-name">invoiceSearchTextBoxIntegerDataTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invoiceSearchTextBoxSpecialCharacterTest">
+                  </a> <!-- invoiceSearchTextBoxSpecialCharacterTest -->
+                  <span class="method-name">invoiceSearchTextBoxSpecialCharacterTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="invoiceSearchTextBoxStringDataTest">
+                  </a> <!-- invoiceSearchTextBoxStringDataTest -->
+                  <span class="method-name">invoiceSearchTextBoxStringDataTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -183,7 +305,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Mallikarjun.Shivshar\AppData\Local\Temp\testng-eclipse--962580158\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Mallikarjun.Shivshar\AppData\Local\Temp\testng-eclipse-1116076346\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -232,32 +354,48 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(9);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'generateInvoiceTest')
+data.setCell(0, 1, 'generateCreditNotesTest')
 data.setCell(0, 2, 'com.org.testcases.BookingActivityPageTest')
-data.setCell(0, 3, 33970);
+data.setCell(0, 3, 69792);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'generateCreditNotesTest')
+data.setCell(1, 1, 'generateInvoiceTest')
 data.setCell(1, 2, 'com.org.testcases.BookingActivityPageTest')
-data.setCell(1, 3, 10405);
+data.setCell(1, 3, 34453);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'searchItemTest')
 data.setCell(2, 2, 'com.org.testcases.BookingActivityPageTest')
-data.setCell(2, 3, 5705);
+data.setCell(2, 3, 6494);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'loginApp')
 data.setCell(3, 2, 'com.org.testcases.BookingActivityPageTest')
-data.setCell(3, 3, 4334);
+data.setCell(3, 3, 6407);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'invoiceSearchTextBoxCorrectDataTest')
+data.setCell(4, 1, 'SearchTextBoxBlankDataTest')
 data.setCell(4, 2, 'com.org.testcases.BookingActivityPageTest')
-data.setCell(4, 3, 1138);
+data.setCell(4, 3, 2251);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'invoiceSearchTextBoxCorrectDataTest')
+data.setCell(5, 2, 'com.org.testcases.BookingActivityPageTest')
+data.setCell(5, 3, 1130);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'invoiceSearchTextBoxStringDataTest')
+data.setCell(6, 2, 'com.org.testcases.BookingActivityPageTest')
+data.setCell(6, 3, 1004);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'invoiceSearchTextBoxSpecialCharacterTest')
+data.setCell(7, 2, 'com.org.testcases.BookingActivityPageTest')
+data.setCell(7, 3, 927);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'invoiceSearchTextBoxIntegerDataTest')
+data.setCell(8, 2, 'com.org.testcases.BookingActivityPageTest')
+data.setCell(8, 3, 850);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 55 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -272,22 +410,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.org.testcases.BookingActivityPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">invoiceSearchTextBoxSpecialCharacterTest</span>
-                <br/>
-                <span class="ignored-method-name">SearchTextBoxBlankDataTest</span>
-                <br/>
-                <span class="ignored-method-name">invoiceSearchTextBoxIntegerDataTest</span>
-                <br/>
-                <span class="ignored-method-name">invoiceSearchTextBoxStringDataTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Default_suite" class="panel">
@@ -303,51 +428,85 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">427 ms</span>
+                <span class="method-start">516 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">loginApp</span>
-                <span class="method-start">2642 ms</span>
+                <span class="method-start">3297 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownReports([TestResult name=loginApp status=SUCCESS method=BookingActivityPageTest.loginApp()[pri:1, instance:c...)</span>
-                <span class="method-start">6979 ms</span>
+                <span class="method-start">9711 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">searchItemTest</span>
-                <span class="method-start">7231 ms</span>
+                <span class="method-start">10324 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownReports([TestResult name=searchItemTest status=SUCCESS method=BookingActivityPageTest.searchItemTest()[pri:2...)</span>
-                <span class="method-start">12940 ms</span>
+                <span class="method-start">16821 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invoiceSearchTextBoxStringDataTest</span>
+                <span class="method-start">16950 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReports([TestResult name=invoiceSearchTextBoxStringDataTest status=SUCCESS method=BookingActivityPageTest.in...)</span>
+                <span class="method-start">17956 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invoiceSearchTextBoxIntegerDataTest</span>
+                <span class="method-start">18061 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReports([TestResult name=invoiceSearchTextBoxIntegerDataTest status=SUCCESS method=BookingActivityPageTest.i...)</span>
+                <span class="method-start">18914 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">SearchTextBoxBlankDataTest</span>
+                <span class="method-start">19028 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReports([TestResult name=SearchTextBoxBlankDataTest status=SUCCESS method=BookingActivityPageTest.SearchText...)</span>
+                <span class="method-start">21281 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="test-method">
+                <span class="method-name">invoiceSearchTextBoxSpecialCharacterTest</span>
+                <span class="method-start">21389 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDownReports([TestResult name=invoiceSearchTextBoxSpecialCharacterTest status=SUCCESS method=BookingActivityPageT...)</span>
+                <span class="method-start">22317 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">invoiceSearchTextBoxCorrectDataTest</span>
-                <span class="method-start">13076 ms</span>
+                <span class="method-start">22429 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownReports([TestResult name=invoiceSearchTextBoxCorrectDataTest status=SUCCESS method=BookingActivityPageTest.i...)</span>
-                <span class="method-start">14218 ms</span>
+                <span class="method-start">23560 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
                 <span class="method-name">generateInvoiceTest</span>
-                <span class="method-start">14358 ms</span>
+                <span class="method-start">23649 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDownReports([TestResult name=generateInvoiceTest status=SUCCESS method=BookingActivityPageTest.generateInvoiceTe...)</span>
-                <span class="method-start">48331 ms</span>
+                <span class="method-start">58105 ms</span>
               </div> <!-- configuration-method after -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">generateCreditNotesTest</span>
-                <span class="method-start">48407 ms</span>
+                <span class="method-start">58186 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">tearDownReports([TestResult name=generateCreditNotesTest status=SUCCESS method=BookingActivityPageTest.generateCredi...)</span>
-                <span class="method-start">58815 ms</span>
+                <span class="method-name">tearDownReports([TestResult name=generateCreditNotesTest status=FAILURE method=BookingActivityPageTest.generateCredi...)</span>
+                <span class="method-start">127983 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">58941 ms</span>
+                <span class="method-start">128231 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

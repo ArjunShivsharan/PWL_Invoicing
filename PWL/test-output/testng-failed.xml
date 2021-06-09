@@ -7,13 +7,9 @@
         <methods>
           <include name="setUp"/>
           <include name="tearDown"/>
-          <include name="generateInvoiceTest"/>
-          <include name="searchItemTest"/>
           <include name="generateCreditNotesTest"/>
           <include name="setUpSuite"/>
           <include name="tearDownReports"/>
-          <include name="invoiceSearchTextBoxCorrectDataTest"/>
-          <include name="loginApp"/>
         </methods>
       </class> <!-- com.org.testcases.BookingActivityPageTest -->
     </classes>
