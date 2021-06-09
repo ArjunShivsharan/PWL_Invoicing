@@ -244,7 +244,7 @@ public class BookingActivityPage {
 			chargesDetailsTab.click();
 			//Thread.sleep(4000);
 			WebElement CN_amount = driver.findElement(By.id("InvoiceAmount"));
-			Thread.sleep(1000);
+			Thread.sleep(2000);
 			System.out.println("Credit Note generated Succesfully of Amount = "+CN_amount.getText());
 			
 			cancelFullInvoice.click();
