@@ -73,7 +73,7 @@ public class BookingActivityPageTest extends BaseClass
 	   Thread.sleep(3000);
 	   logger = report.createTest("9.This Test will Cancel  Invoice, Generate Credit Notes and send Email");
 	   baPage.searchItem(config.getItemFromCofigFile());
-	   baPage.SearchTextBoxCorrectData(config.getCorrectValueFromCofigFile());
+	   baPage.generateCreditNotes();
 	   Thread.sleep(3000);
 	   		  
    }

@@ -238,7 +238,7 @@ return Inv_amount.getText();
      }
 
 	
-	public String generateCreditNotes() throws Exception 
+	public void generateCreditNotes() throws Exception 
 	{
 		Thread.sleep(2000);
 		chargesDetailsTab.click();
@@ -272,7 +272,7 @@ return Inv_amount.getText();
 //	    sendMail.click();
 //	    Thread.sleep(5000);
 //		okButton.click();
-		return CN_amount.getText();
+		
 		
 //	    
 	    
