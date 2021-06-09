@@ -240,7 +240,7 @@ public class BookingActivityPage {
 	public void generateCreditNotes() throws Exception  
 	{
 		
-			Thread.sleep(2000);
+			Thread.sleep(5000);
 			chargesDetailsTab.click();
 			//Thread.sleep(4000);
 			WebElement CN_amount = driver.findElement(By.id("InvoiceAmount"));
