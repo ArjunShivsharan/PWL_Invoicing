@@ -28,19 +28,19 @@ public class BookingActivityPageTest extends BaseClass
 
    }
    
-   @Test(enabled=false)
+   @Test(priority=3)
    public void invoiceSearchTextBoxStringDataTest() throws Exception 
    {
 	   logger = report.createTest("3.This Test will try to find the Principle Booking No. by string value");
        baPage.invoiceSearchTextBoxData(config.getStringValueFromCofigFile());
    }
-   @Test(enabled=false)
+   @Test(priority=4)
    public void invoiceSearchTextBoxIntegerDataTest() throws Exception 
    {
 	   logger = report.createTest("4.This Test will try to find the Principle Booking No. by Integer value");
        baPage.invoiceSearchTextBoxData(config.getNumericValueFromCofigFile());
    }
-   @Test(enabled=false)
+   @Test(priority=5)
    public void SearchTextBoxBlankDataTest() throws Exception 
    {
 	   logger = report.createTest("5.This Test will try to find the Principle Booking No. by Blank value");
@@ -48,26 +48,26 @@ public class BookingActivityPageTest extends BaseClass
    }
   
    
-   @Test(enabled=false)
+   @Test(priority=6)
    public void invoiceSearchTextBoxSpecialCharacterTest() throws Exception 
    {
 	  logger = report.createTest("6.This Test will try to find the Principle Booking No. by Special Character value");
 	  baPage.invoiceSearchTextBoxData(config.getSpecialCharacterValueFromCofigFile());
    }
-   @Test(priority=3)
+   @Test(priority=7)
    public void invoiceSearchTextBoxCorrectDataTest() throws Exception 
    {
 	  logger = report.createTest("7.This Test will try to find the Principle Booking No. by correct Principle Booking No.");
 	  baPage.SearchTextBoxCorrectData(config.getCorrectValueFromCofigFile());
    }
-   @Test(priority=4)
+   @Test(priority=8)
    public void generateInvoiceTest() throws Exception 
    {
 	  logger = report.createTest("8.This Test will Generate Invoice and send Email");
 	  baPage.generateInvoice(config.getChargeName());
 
 	}
-   @Test(priority=5)
+   @Test(priority=9)
    public void  generateCreditNotesTest() throws Exception 
    {
 	   Thread.sleep(3000);
