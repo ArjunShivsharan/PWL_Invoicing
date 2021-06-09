@@ -85,8 +85,7 @@
                     <!-- Suite testng xml file to consider for test execution -->
                     <suiteXmlFiles>
                         <suiteXmlFile>testng.xml</suiteXmlFile>
-                        <suiteXmlFile>Results.xml</suiteXmlFile>
-                        
+                                               
                         
                     </suiteXmlFiles>
                 </configuration>
