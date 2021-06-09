@@ -55,7 +55,7 @@ public class BookingActivityPage {
 	@FindBy(id="CCMailAddress") WebElement ccMailAddress; 
 	@FindBy(id="SendMail") WebElement sendMail; 
 	@FindBy(id="CancelFullInvoice") WebElement cancelFullInvoice; 
-	@FindBy(id="SavereditNote") WebElement saveCreditNote; //CancelFullInvoice
+	@FindBy(id="SaveCreditNote") WebElement saveCreditNote; //CancelFullInvoice
 	@FindBy(id="CloseSendMailModal") WebElement closeSendMailModal;
 
 	
