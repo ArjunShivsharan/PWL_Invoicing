@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="PWL Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.org.testcases.BookingActivityPageTest" />
+			<class name="com.org.pages.BaseClass"/>
+			<class name="com.org.utility.BrowserFactory"/>
+			<class name="com.org.utility.ConfigDataProvider"/>
+			<class name="com.org.utility.Helper"/>
+		</classes>
+	</test>
+</suite>

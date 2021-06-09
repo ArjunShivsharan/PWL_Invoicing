@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="4" total="9" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-06-09T17:15:27 IST" name="Default suite" finished-at="2021-06-09T17:16:59 IST" duration-ms="92088">
+    <groups>
+    </groups>
+    <test started-at="2021-06-09T17:15:27 IST" name="Default test" finished-at="2021-06-09T17:16:59 IST" duration-ms="92088">
+      <class name="com.org.testcases.BookingActivityPageTest">
+        <test-method is-config="true" signature="setUpSuite()[pri:0, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:15:27 IST" name="setUpSuite" finished-at="2021-06-09T17:15:27 IST" duration-ms="433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpSuite -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:15:27 IST" name="setUp" finished-at="2021-06-09T17:15:35 IST" duration-ms="8323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginApp()[pri:1, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:15:35 IST" name="loginApp" finished-at="2021-06-09T17:16:07 IST" duration-ms="31509" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginApp -->
+        <test-method is-config="true" signature="tearDownReports(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:07 IST" name="tearDownReports" finished-at="2021-06-09T17:16:07 IST" duration-ms="349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginApp status=SUCCESS method=BookingActivityPageTest.loginApp()[pri:1, instance:com.org.testcases.BookingActivityPageTest@56528192] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReports -->
+        <test-method signature="searchItemTest()[pri:2, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:07 IST" name="searchItemTest" finished-at="2021-06-09T17:16:13 IST" duration-ms="5995" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchItemTest -->
+        <test-method is-config="true" signature="tearDownReports(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:13 IST" name="tearDownReports" finished-at="2021-06-09T17:16:13 IST" duration-ms="89" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=searchItemTest status=SUCCESS method=BookingActivityPageTest.searchItemTest()[pri:2, instance:com.org.testcases.BookingActivityPageTest@56528192] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReports -->
+        <test-method signature="invoiceSearchTextBoxCorrectDataTest()[pri:3, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:13 IST" name="invoiceSearchTextBoxCorrectDataTest" finished-at="2021-06-09T17:16:14 IST" duration-ms="1133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invoiceSearchTextBoxCorrectDataTest -->
+        <test-method is-config="true" signature="tearDownReports(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:14 IST" name="tearDownReports" finished-at="2021-06-09T17:16:15 IST" duration-ms="140" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=invoiceSearchTextBoxCorrectDataTest status=SUCCESS method=BookingActivityPageTest.invoiceSearchTextBoxCorrectDataTest()[pri:3, instance:com.org.testcases.BookingActivityPageTest@56528192] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReports -->
+        <test-method signature="generateInvoiceTest()[pri:4, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:15 IST" name="generateInvoiceTest" finished-at="2021-06-09T17:16:49 IST" duration-ms="33878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateInvoiceTest -->
+        <test-method is-config="true" signature="tearDownReports(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:49 IST" name="tearDownReports" finished-at="2021-06-09T17:16:49 IST" duration-ms="75" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=generateInvoiceTest status=SUCCESS method=BookingActivityPageTest.generateInvoiceTest()[pri:4, instance:com.org.testcases.BookingActivityPageTest@56528192] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReports -->
+        <test-method signature="generateCreditNotesTest()[pri:5, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:49 IST" name="generateCreditNotesTest" finished-at="2021-06-09T17:16:59 IST" duration-ms="10401" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateCreditNotesTest -->
+        <test-method is-config="true" signature="tearDownReports(org.testng.ITestResult)[pri:0, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:59 IST" name="tearDownReports" finished-at="2021-06-09T17:16:59 IST" duration-ms="129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=generateCreditNotesTest status=SUCCESS method=BookingActivityPageTest.generateCreditNotesTest()[pri:5, instance:com.org.testcases.BookingActivityPageTest@56528192] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReports -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.org.testcases.BookingActivityPageTest@56528192]" started-at="2021-06-09T17:16:59 IST" name="tearDown" finished-at="2021-06-09T17:16:59 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.org.testcases.BookingActivityPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
