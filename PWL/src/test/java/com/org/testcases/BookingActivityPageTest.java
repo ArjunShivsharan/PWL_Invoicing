@@ -68,7 +68,7 @@ public class BookingActivityPageTest extends BaseClass
 
 	}
    @Test(priority=9)
-   public void  generateCreditNotesTest() throws Exception 
+   public void  generateCreditotesTest() throws Exception 
    {
 	   Thread.sleep(3000);
 	   logger = report.createTest("9.This Test will Cancel  Invoice, Generate Credit Notes and send Email");
