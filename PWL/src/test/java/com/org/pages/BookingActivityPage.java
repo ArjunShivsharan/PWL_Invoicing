@@ -1,8 +1,6 @@
 package com.org.pages;
 
 import java.util.List;
-import java.util.Scanner;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -149,11 +147,7 @@ public class BookingActivityPage {
 
       addNewChargeButton.click();
       Thread.sleep(1000);
-      Scanner sc = new Scanner(System.in);
-      System.out.println("Enter Charge Name: ");
-      String chargename = sc.nextLine();
-      
-      chargeNameTB.sendKeys(chargename);
+      chargeNameTB.sendKeys(chargeName);
       Thread.sleep(1000);
       
       
