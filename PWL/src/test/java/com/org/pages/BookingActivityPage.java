@@ -1,6 +1,8 @@
 package com.org.pages;
 
 import java.util.List;
+import java.util.Scanner;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -147,7 +149,11 @@ public class BookingActivityPage {
 
       addNewChargeButton.click();
       Thread.sleep(1000);
-      chargeNameTB.sendKeys(chargeName);
+      Scanner sc = new Scanner(System.in);
+      System.out.println("Enter Charge Name: ");
+      String chargename = sc.nextLine();
+      
+      chargeNameTB.sendKeys(chargename);
       Thread.sleep(1000);
       
       
@@ -216,7 +222,7 @@ public class BookingActivityPage {
 	  Thread.sleep(8000);
 	  String currentWindowHandle= driver.getWindowHandle();
 	  driver.switchTo().window(currentWindowHandle);//-----------
-	  Thread.sleep(5000);
+	  Thread.sleep(3000);
 	 
 	 
 //	  sendMailToCustomer.click();
@@ -240,7 +246,7 @@ public class BookingActivityPage {
 	public void generateCreditNotes() throws Exception  
 	{
 		
-			Thread.sleep(5000);
+			Thread.sleep(3000);
 			chargesDetailsTab.click();
 			//Thread.sleep(4000);
 			WebElement CN_amount = driver.findElement(By.id("InvoiceAmount"));
