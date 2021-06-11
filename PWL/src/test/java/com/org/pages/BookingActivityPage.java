@@ -124,9 +124,10 @@ public class BookingActivityPage {
 	public void SearchTextBoxCorrectData(int d) throws Exception 
 	{ 
 		mainSearchInvoiceTextBox.sendKeys(String.valueOf(d));
+		String bookingNumber = String.valueOf(d);
 		SearchInvoiceButton.click();
 		Thread.sleep(1000);
-		//System.out.println("Message From SearchTextBoxCorrectData() : "+"Data Entered Correctly...!");
+		System.out.println("Entered Booking number is :"+bookingNumber);
    }
 	
 	public void generateInvoice(String chargeName) throws Exception 
