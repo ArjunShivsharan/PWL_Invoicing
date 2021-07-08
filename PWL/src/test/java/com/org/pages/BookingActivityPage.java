@@ -89,12 +89,17 @@ public class BookingActivityPage {
 	{ 
 		mainSearchInvoiceTextBox.sendKeys(String.valueOf(data));
 		SearchInvoiceButton.click();
-		Thread.sleep(500);
+		Thread.sleep(2000);
 		System.out.println("Message from invoiceSearchTextBox() : "+"!!!!!! "+alertmsg.getText()+ " !!!!!!");
+		Thread.sleep(2000);
 		String actualData = alertmsg.getText();
+		Thread.sleep(2000);
 		okButton.click();
+		Thread.sleep(2000);
 		mainSearchInvoiceTextBox.clear();
+		Thread.sleep(2000);
 		String expextedData = "No Records Found for Booking No.";
+		Thread.sleep(2000);
 		Assert.assertEquals(actualData, expextedData);
    }
 	
@@ -113,18 +118,25 @@ public class BookingActivityPage {
 	public void SearchTextBoxBlankData() throws Exception 
 	{ 
 		mainSearchInvoiceTextBox.clear();
+		Thread.sleep(2000);
 		SearchInvoiceButton.click();
 		Thread.sleep(2000);
 		System.out.println("Message from invoiceSearchTextBoxBlankData : "+"!!!!!! "+alertmsg.getText()+ " !!!!!!");
+		Thread.sleep(2000);
 		String actualData = alertmsg.getText();
+		Thread.sleep(2000);
 		okButton.click();
+		Thread.sleep(2000);
 		String expextedData = "Please enter the Booking No.";
+		Thread.sleep(2000);
 		Assert.assertEquals(actualData, expextedData);
    }
 	public void SearchTextBoxCorrectData(int d) throws Exception 
 	{ 
 		mainSearchInvoiceTextBox.sendKeys(String.valueOf(d));
+		Thread.sleep(2000);
 		String bookingNumber = String.valueOf(d);
+		Thread.sleep(2000);
 		SearchInvoiceButton.click();
 		Thread.sleep(1000);
 		System.out.println("Entered Booking number is :"+bookingNumber);
@@ -141,15 +153,15 @@ public class BookingActivityPage {
      Select FY = new Select(driver.findElement(By.id("FinancialYear")));
 	 Thread.sleep(500);
 	  FY.selectByVisibleText("20-21");
-	  Thread.sleep(500);
+	  Thread.sleep(2000);
 
       chargesDetailsTab.click();
-	  Thread.sleep(500);
+      Thread.sleep(2000);
 
       addNewChargeButton.click();
-      Thread.sleep(1000);
+      Thread.sleep(2000);
       chargeNameTB.sendKeys(chargeName);
-      Thread.sleep(1000);
+      Thread.sleep(2000);
       
       
       List<WebElement> list1 = driver.findElements(By.xpath(".//*[@id='ui-id-1']/li"));
@@ -242,6 +254,7 @@ public class BookingActivityPage {
 	{
 		
 			Thread.sleep(3000);
+			 //driver.findElement(By.xpath("//*[@id='bookingNumber']")).click();
 			chargesDetailsTab.click();
 			//Thread.sleep(4000);
 			WebElement CN_amount = driver.findElement(By.id("InvoiceAmount"));
